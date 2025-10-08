@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p,
+strong {
+    border: 1px solid;
+}
+
+#miCaja {
+    margin: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}

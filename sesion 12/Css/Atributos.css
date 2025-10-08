@@ -1,7 +1,7 @@
-a[class = "externo"]{
+a[class="externo"] {
     color: green;
 }
-a[class = "prueba"{
-    color: magenta;
-]
-a[hr]
+
+a[class~="prueba"]{
+    color:magenta
+}

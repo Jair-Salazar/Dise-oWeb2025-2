@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+
+    <link rel="icon" href="img/form.ico">
+
+</head>
+
+
+<body>
+    <div id="contenedor" style="width: 500px;">
+        <h2 style="color: crimson;">FORMULARIO</h2>
+
+        <form id="formulario" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos_personales">
+                <legend><b>DATOS PERSONALES</b></legend>
+
+                <label for="Nombre"><b>Nombre</b></label> <br>
+                <input type="text" name="nombre" id="nombre"> <br>
+
+                <label for="Apellido"><b>Apellido</b></label><br>
+                <input type="text" name="apellido" id="apellido"><br>
+
+                <label for="Direccion"><b>Dirección</b></label><br>
+                <input type="text" name="direccion" id="direccion"><br>
+
+                <label for="dni"><b>DNI</b></label><br>
+                <input type="text" name="dni" id="dni" maxlength="9"> <br>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="email" name="email" id="email"><br>
+
+                <label for="fNacimiento"><b>Fecha de Nacimiento</b></label><br>
+                <input type="date" name="fNacimiento" id="fNacimiento"><br>
+
+
+                <label for="universidad"><b>Universidad</b></label><br>
+                <select id="universidad" name="universidad">
+                    <option value="X" selected="select">...</option>
+                    <option value="A">USAT</option>
+                    <option value="B">UCV</option>
+                    <option value="C">UNPRG</option>
+                    <option value="D">UTP</option>
+                    <option value="E">Otro</option>
+                </select>
+
+
+                <fieldset id="sexo">
+                    <legend><b>SEXO</b></legend>
+                    <input type="radio" name="sexo" value="masculino">Masculino<br>
+                    <input type="radio" name="sexo" value="femenino">Femenino
+                </fieldset>
+
+
+                <fieldset id="cursos">
+                    <legend><b>CURSOS</b></legend>
+                    <input type="checkbox" name="cursos" value="iArtificial">Inteligencia Artificial <br>
+                    <input type="checkbox" name="cursos" value="bIntelligence">Business Intelligence <br>
+                    <input type="checkbox" name="cursos" value="cDatos">Ciencia de Datos <br>
+                    <input type="checkbox" name="cursos" value="cSeguridad">Ciber-Seguridad <br>
+
+
+                </fieldset>
+
+                <fieldset id="comentario">
+                    <legend><b>COMENTARIO</b></legend>
+                    <textarea name="comen" id="comen" rows="14" cols="50"></textarea>
+
+                </fieldset>
+                <br>
+                <div id="botones">
+                    <input type="reset" class="btn" value="Nuevo">
+                    <input type="submit" class="btn" value="Enviar">
+                </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

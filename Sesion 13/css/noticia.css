@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+#caja1{
+background-color: wheat;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+
+}
+
+#caja2{
+float: right;
+width: 400px;
+
+
+}
+
+#caja3{
+    background-color: bisque;
+}
+
+#caja4{
+    width: 200px;
+    float: right;
+    margin: 0px;
+}

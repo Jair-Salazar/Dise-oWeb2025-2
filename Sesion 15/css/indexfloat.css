@@ -1,34 +1,67 @@
-/*.grid{
-    display: grid;
-    grid-template-columns: 50px 300px;
-    grid-template-rows: 200px 75px;
-}*/
-
-/*.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;}*/
-
-.grid{
-    display: grid;
-    grid-template-columns: "head head" "menu y contenido" "foot foot";
-    grid-template-rows: 2fr 1fr;
+/* RESETEO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.a {
-    background-color: blue;
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
 }
 
-.b{
-    background-color: red;
-}
-
-.c{
-    background-color: green;
-}
-
-.d{
-    background-color: orange;
+/* HEADER */
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 
+/* NAV */
+nav {
+    float: left;
+    width: 20%;
+    background-color: #ff9999;
+    padding: 15px;
+    height: calc(100vh - 130px);
+
+}
+
+/* SECTION */
+section {
+    float: left;
+    width: 55%;
+    background-color: #ffe6e6;
+    padding: 15px;
+    height: calc(100vh - 130px);
+
+}
+
+/* ASIDE */
+aside {
+    float: left;
+    width: 25%;
+    background-color: #ff9999;
+    padding: 15px;
+    height: calc(100vh - 130px);
+
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* LAS LISTAS DEL NAV */
+nav ul {
+    list-style: none;
+    margin-bottom: 10px;
+}

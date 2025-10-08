@@ -1,0 +1,15 @@
+div h2{
+font-size: 60px;
+}
+
+div p a{
+    color:green
+}
+
+div>a{
+    color:blue
+}
+
+div a{
+    color:blue
+}

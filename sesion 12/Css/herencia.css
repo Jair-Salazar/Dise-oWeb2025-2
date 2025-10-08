@@ -1,0 +1,16 @@
+/* body{
+    color:teal
+} */
+
+body{
+    font-family: Arial;
+    color: black;
+}
+
+h1{
+    font-family: verdana;
+}
+
+p{
+    color: crimson;
+}
