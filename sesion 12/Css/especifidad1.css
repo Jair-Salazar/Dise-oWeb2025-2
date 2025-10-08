@@ -1,0 +1,39 @@
+ p {
+     color: green;
+     font-size: 16px;
+     font-family: sans-serif;
+ }
+
+ .texto-principal {
+     color: blue;
+     font-size: 18px;
+ }
+
+ .importante {
+     font-family: monospace;
+ }
+
+ #miParrafo {
+     color: orange;
+     font-size: 20px;
+ }
+
+ p.importante {
+     font-family: cursive;
+ }
+
+ p#miParrafo {
+     font-size: 22px;
+ }
+
+ .importante#miParrafo {
+     color: red;
+ }
+
+ * {
+     font-style: italic;
+ }
+
+ #contenedorPrincipal p {
+     font-family: "Times New Roman";
+ }
