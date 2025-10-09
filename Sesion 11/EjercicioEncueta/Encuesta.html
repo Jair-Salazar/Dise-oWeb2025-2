@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Contenedor" style="width: 500px;">
+        <h1 style="color: blue; font-family: 'times new roman'; text-align: center;">Titulo de formulario</h1>
+        <form action="id" name="formulario 1" method="post" action="data.php">
+            <fieldset id="datos personales">
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombres: &nbsp;&nbsp; <input type="text" name="nombre" 
+                        id="nombre"><br></label><br>
+                <label for="apellido">Apellidos: &nbsp;&nbsp; <input type="text" name="apellido"
+                        id="apellido"><br></label><br>
+                <label for="direccion">Dirección: &nbsp;&nbsp; <input type="text" name="direccion"
+                        id="direccion"><br></label><br>
+                <label for="DNI">DNI: &nbsp;&nbsp; <input type="text" name="DNI"
+                        id="DNI"><br></label><br>
+                <label for="email">Email: &nbsp;&nbsp; <input type="email" name="email" 
+                        id="email"><br></label><br>
+                <label for="fecha de nacimiento">Fecha de Nacimiento: &nbsp;&nbsp; <input type="date" name="fecha de nacimiento" 
+                        id="fecha de nacimiento"></label><br><br>
+                <label for="Universidad">Universidad: &nbsp;&nbsp; <select name="Universidad" id="Universidad">
+                    <option value="UNMSM">UNMSM</option>
+                    <option value="USAT">USAT</option>
+                    <option value="UTP">UTP</option>
+                    <option value="UPC">UPC</option>
+                    <option value="Otra">Otra</option> </select><br>
+            </fieldset>
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label><br>
+            </fieldset>
+              <fieldset id="Cursos">
+                <legend>Cursos</legend>
+                <input type="checkbox" name="cursos[]" id="Inteligencia Artificial" value="Inteligencia Artificial">
+                <label for="Inteligencia Artificial">Inteligencia Artificial</label><br>
+                <input type="checkbox" name="cursos[]" id="Bussiness Inteligence" value="Bussiness Inteligence">
+                <label for="Bussiness Inteligence">Bussiness Inteligence</label><br>
+                <input type="checkbox" name="cursos[]" id="Ciencia de Datos" value="Ciencia de Datos">
+                <label for="Ciencia de Datos">Ciencia de Datos</label><br>
+                <input type="checkbox" name="cursos[]" id="Cyberseguridad" value="Cyberseguridad">
+                <label for="Cyberseguridad">Cyberseguridad</label><br>
+            </fieldset>
+            <fieldset id="Comentarios">
+                <legend>Comentarios</legend>
+                <label for="comentarios">Escribe tus comentarios aquí:</label><br>
+                <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea>
+            </fieldset>
+            <br>
+            <input type="button" value="Nuevo">
+            <input type="submit" value="enviar">
+        </form>
+
+    </div>
+</body>
+
+</html>

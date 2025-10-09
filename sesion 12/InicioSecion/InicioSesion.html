@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Registro e Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Panel Izquierdo -->
+        <div class="left-panel">
+            <h1>Bienvenido</h1>
+            <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+            <button class="btn-login">Iniciar sesión</button>
+        </div>
+
+        <!-- Panel Derecho -->
+        <div class="right-panel">
+            <h1>Nuevo Usuario</h1>
+            <div class="social-buttons">
+                <button class="btn-social">Registro con Facebook</button>
+                <button class="btn-social">Registro con Google</button>
+            </div>
+            <p class="divider">O registrarse con</p>
+            
+            <form class="register-form">
+                <div class="name-fields">
+                    <input type="text" placeholder="Nombres" required>
+                    <input type="text" placeholder="Apellidos" required>
+                </div>
+                <input type="email" placeholder="micorreo@dominio" required>
+                <input type="password" placeholder="su contraseña" required>
+                
+                <label class="terms">
+                    <input type="checkbox" required>
+                    Al crear esta cuenta, aceptas nuestros <strong>términos & condiciones</strong>
+                </label>
+                
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

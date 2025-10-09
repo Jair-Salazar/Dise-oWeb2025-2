@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px ;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text{
+    text-align: left;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mynav mynav" "myaside mysection";
+}
+
+nav{
+    padding: 10px;
+    background-color: rgb(233, 88, 88);
+    
+}
+
+nav li{
+    list-style-type: none;
+}
+
+section{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.service{
+    display: flex; /* Convierte el div en un contenedor flex */
+    align-items: center;
+    text-align: center;
+}
+
+aside{
+    background-color: rgb(233, 88, 88);
+    padding: 10px;
+}
+
+.img{
+    float: right;
+    width: 80px;
+    height: auto;
+}
+
+.img1{
+    float: left;
+    width: 80px;
+    height: auto;
+
+}
+
+/*First mobile*/
+@media (max-width:599px){
+    header {
+    height: auto;
+    padding:10px;
+    line-height: 40px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    img{
+        float: left;
+        width: 20%;
+    }
+
+    .imagenes-header {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .imagenes-header img {
+        height: 90%;
+    }
+}
+
+/*Entre 600 y 1000px*/
+@media (min-width:600px) and (max-width:1000px){
+    header{
+        height: auto;
+        line-height: 40px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "mynav mynav" "mysection myaside ";
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+    }
+
+    img{
+        float: left;
+        width: 20%;
+        height: auto;
+    }
+
+    .imagenes-header img {
+        height: 90%;
+    }
+}
+
+/*Modelo para laptop*/
+@media (min-width:1001px){
+    header{
+        height: 130px;
+        line-height: 30px;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    main{
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "mynav mysection myaside";
+    }
+    img{
+        width: 11%;
+    }
+
+}
