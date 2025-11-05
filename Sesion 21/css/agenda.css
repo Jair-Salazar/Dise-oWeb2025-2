@@ -1,0 +1,16 @@
+#contenedor{
+    width: 360px;
+    margin: auto;
+    background-color: floralwhite;
+    padding-left: 10px;
+    font-family: calibri;
+}
+span{
+    width: 100px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+.titu{
+    background-color: #0df39b;
+}

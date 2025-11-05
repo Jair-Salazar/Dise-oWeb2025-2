@@ -1,0 +1,75 @@
+.caraoso{
+    width: 200px;
+    height: 200px;
+    background-color: #ca641b;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px auto;
+}
+.oreja{
+    width: 100px;  
+    height: 120px;
+    background-color: #ca641b;
+    position: absolute;
+    top: -40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.oreja::before{
+    content: "";
+    width: 60px;
+    height: 80px;
+    background-color: #f5deb3;
+    border-radius: 50%;
+}
+.orejaizq{
+    left: -20px;
+}
+.orejader{
+    right: -20px;
+}
+.ojo{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+   border-radius: 50%;
+}
+.ojoizq{
+    left: 40px;
+}
+.ojoder{
+    right: 40px;
+}
+.hocico{
+    width: 100px;
+    height: 80px;
+    background-color: #f5deb3;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    border-radius: 50%;
+}
+.nariz{
+    width: 30px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 10px;  /* ✅ baja la nariz */
+    left: 35px;
+    border-radius: 50%;
+}
+
+.boca{
+    width: 60px;
+    height: 30px;
+    border-bottom: 4px solid black;
+    border-radius: 0 0 50px 50px; /* ✅ curva de sonrisa */
+    position: absolute;
+    top: 35px;  /* ✅ mueve debajo de la nariz */
+    left: 20px;
+}
