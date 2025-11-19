@@ -1,0 +1,132 @@
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 400px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.campo {
+    margin-top: 18px;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    transition: .25s;
+    background: #fafafa;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+    background: white;
+}
+
+.botones {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+    font-size: 14px;
+}
+
+/* COLORES NUEVOS */
+.guardar {
+    background: #28c76f; 
+    color: white;
+}
+.buscar {
+    background: #7367f0; 
+    color: white;
+}
+.eliminar {
+    background: #ea5455; 
+    color: white;
+}
+.eliminar-todos {
+    background: #8395a7; 
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}
+
+ul {
+    margin-top: 25px;
+    padding: 0;
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+li {
+    background: #f5f7fa;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 6px solid #7367f0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+li:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.vacio {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}

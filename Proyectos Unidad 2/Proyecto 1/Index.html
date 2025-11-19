@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+
+    <link rel="stylesheet" href="css/agenda.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Agenda de Contactos</h2>
+
+        <div class="campo">
+            <label>Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese nombre">
+        </div>
+
+        <div class="campo">
+            <label>Celular</label>
+            <input type="text" id="movil" placeholder="Ingrese número de celular">
+        </div>
+
+        <div class="botones">
+            <button class="guardar" id="guardarbtn">Guardar</button>
+            <button class="buscar" id="buscarbtn">Buscar</button>
+            <button class="eliminar" id="eliminarbtn">Eliminar</button>
+            <button class="eliminar-todos" id="elitodosbtn">Eliminar Todos</button>
+        </div>
+
+        <ul id="contactos"></ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

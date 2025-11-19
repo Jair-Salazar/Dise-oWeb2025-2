@@ -1,0 +1,162 @@
+/* Fondo general estilo Pac-Man */
+body {
+  margin: 0;
+  background-color: #000; /* negro clásico */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 450px;
+  height: 600px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #000; /* fondo negro */
+  box-shadow: 0 0 20px #ffff00; /* brillo amarillo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #ffcc00; /* amarillo Pac-Man */
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+/* Laberinto */
+.laberinto {
+  position: relative;
+  width: 420px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: inset 0 0 25px #0000ff; /* azul clásico paredes */
+  border: 3px solid #0000ff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #000; /* fondo negro */
+}
+
+/* Pac-Man amarillo clásico */
+.pacman-clasico {
+  position: absolute;
+  top: 10%;
+  left: 110%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border-left: 20px solid #ffff00;
+  border-top: 20px solid #ffff00;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #ffff00;
+  filter: drop-shadow(0 0 4px yellow);
+  transform: rotate(180deg);
+  animation: seguirCamino 12s linear infinite;
+  animation-delay: 2s;
+  z-index: 1;
+}
+
+/* Fantasma azul con carita un poco más pequeño */
+.fantasma {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  width: 35px; /* más pequeño */
+  height: 35px; /* más pequeño */
+  background-color: #00bfff;
+  border-radius: 50% 50% 0 0; /* cabeza redonda */
+  text-align: center;
+  line-height: 35px;
+  font-size: 1rem; /* más pequeño para la carita */
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  animation: seguirCamino 12s linear infinite;
+  overflow: hidden;
+}
+
+/* Base ondulada del fantasma */
+.fantasma::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #00bfff;
+  border-radius: 50%;
+  box-shadow: 8px 0 #00bfff, 16px 0 #00bfff, 24px 0 #00bfff;
+}
+
+/* Paredes estilo azul clásico */
+.pared {
+  position: absolute;
+  background-color: #0000ff; /* azul Pac-Man */
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  z-index: 1;
+}
+
+/* Paredes reajustadas para que Pac-Man y fantasma NO choquen */
+.fila1 { top: 18%; left: 0; width: 48%; }
+.fila2 { top: 18%; left: 72%; width: 28%; }
+.fila3 { top: 36%; left: 0; width: 20%; }
+.fila4 { top: 36%; left: 40%; width: 58%; }
+.fila5 { top: 54%; left: 0; width: 48%; }
+.fila6 { top: 54%; left: 70%; width: 48%; }
+.fila7a { top: 72%; left: 0; width: 18%; }
+.fila7b { top: 72%; left: 38%; width: 80%; }
+
+/* Animación de movimiento */
+@keyframes seguirCamino {
+  0%   { top: 10%; left: 110%; }
+  10%  { top: 10%; left: 82%; }
+  20%  { top: 10%; left: 55%; }
+  30%  { top: 25%; left: 55%; }
+  40%  { top: 25%; left: 25%; }
+  50%  { top: 45%; left: 25%; }
+  60%  { top: 45%; left: 55%; }
+  70%  { top: 65%; left: 55%; }
+  80%  { top: 65%; left: 22%; }
+  90%  { top: 85%; left: 22%; }
+  100% { top: 85%; left: 5%; }
+}
+
+/* Botón START */
+.start-btn {
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffcc00; /* amarillo Pac-Man */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #fff;
+  color: #ffcc00;
+}
+
+/* Texto PAC-MAN al pie del laberinto */
+.laberinto::after {
+  content: "PAC-MAN";
+  position: absolute;
+  bottom: 0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffcc00;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 8px #ffcc00;
+  opacity: 0.7;
+}
