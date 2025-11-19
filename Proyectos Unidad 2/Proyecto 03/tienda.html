@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateZone - Tienda de Bicis y Skates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-top">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap">
+            <ul class="navbar-nav d-flex flex-row flex-wrap me-2">
+                <li class="nav-item">
+                    <a class="nav-link active-inicio" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Faq's</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row flex-wrap ms-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="miCuentaDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Mi Cuenta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="miCuentaDropdown">
+                        <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="monedaDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Moneda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="monedaDropdown">
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">PEN</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Idioma
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="idiomaDropdown">
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header-main text-center">
+        <div class="container">
+            <h1 class="logo-text">Skate<span class="text-black">Zone</span></h1>
+        </div>
+    </header>
+
+    <section class="search-bar-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-12 d-flex mb-3 mb-md-0">
+                    <input type="text" class="form-control me-2" placeholder="Buscar">
+                    <button class="btn btn-info search-btn">Buscar</button>
+                </div>
+                <div class="col-md-5 col-12 text-center text-md-end social-icons">
+                    <a href="#" class="btn facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn google"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-dark navbar-bottom">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap">
+            <ul class="navbar-nav d-flex flex-row flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Bicicletas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accesorios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="montanaDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Montaña
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="montanaDropdown">
+                        <li><a class="dropdown-item" href="#">Bicicletas MTB</a></li>
+                        <li><a class="dropdown-item" href="#">Cascos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="urbanoDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Urbano
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="urbanoDropdown">
+                        <li><a class="dropdown-item" href="#">Bicicletas Urbanas</a></li>
+                        <li><a class="dropdown-item" href="#">Skates Cruiser</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 order-md-2">
+                    <img src="IMG/bike-store-main.jpg" class="img-fluid main-image" alt="Imagen Principal">
+                </div>
+                <div class="col-lg-3 col-md-4 order-md-1 mt-4 mt-md-0">
+                    <div class="sidebar-brands">
+                        <ul class="list-group">
+                            <li class="list-group-item sidebar-title">Marcas</li>
+                            <li class="list-group-item">Trek</li>
+                            <li class="list-group-item">Specialized</li>
+                            <li class="list-group-item">Santa Cruz</li>
+                            <li class="list-group-item">Element Skateboards</li>
+                            <li class="list-group-item">Globe</li>
+                            <li class="list-group-item">Vans</li>
+                            <li class="list-group-item">Giro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros servicios</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-check-circle service-icon"></i>
+                        <p class="service-text">Calidad garantizada</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-truck service-icon"></i>
+                        <p class="service-text">Envío sin costo adicional</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-exchange-alt service-icon"></i>
+                        <p class="service-text">14 días para devolución</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-headset service-icon"></i>
+                        <p class="service-text">Soporte a cualquier hora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Productos</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card text-center">
+                        <img src="IMG/bike-mtb.jpg" alt="Bicicleta MTB" class="img-fluid product-img">
+                        <h5 class="product-title">Bicicleta MTB</h5>
+                        <p class="product-price">S/1230.00 <span class="original-price">S/1800.00</span></p>
+                        <button class="btn btn-primary btn-sm btn-comprar">Comprar</button>
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star"></i>
+                            <span class="rating-count">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card text-center">
+                        <img src="IMG/skate-cruiser.jpg" alt="Skate Cruiser" class="img-fluid product-img">
+                        <h5 class="product-title">Skate Cruiser</h5>
+                        <p class="product-price">S/930.00 <span class="original-price">S/1100.00</span></p>
+                        <button class="btn btn-primary btn-sm btn-comprar">Comprar</button>
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star"></i>
+                            <span class="rating-count">(55)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card text-center">
+                        <img src="IMG/helmet-pro.jpg" alt="Casco Pro" class="img-fluid product-img">
+                        <h5 class="product-title">Casco Pro</h5>
+                        <p class="product-price">S/419.00 <span class="original-price">S/560.00</span></p>
+                        <button class="btn btn-primary btn-sm btn-comprar">Comprar</button>
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star"></i>
+                            <span class="rating-count">(35)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card text-center">
+                        <img src="IMG/skate-pro.jpg" alt="Skate Pro" class="img-fluid product-img">
+                        <h5 class="product-title">Skate Pro</h5>
+                        <p class="product-price">S/1530.00 <span class="original-price">S/1830.00</span></p>
+                        <button class="btn btn-primary btn-sm btn-comprar">Comprar</button>
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star filled"></i><i class="fas fa-star filled"></i><i
+                                class="fas fa-star"></i>
+                            <span class="rating-count">(32)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section py-5 text-center">
+        <div class="container">
+            <h2 class="mb-3">Suscríbete para recibir novedades</h2>
+            <p class="mb-4">¡Cupones exclusivos y notificaciones de nuestros mejores eventos!</p>
+            <form class="d-flex justify-content-center flex-column flex-sm-row">
+                <input type="email" class="form-control mb-2 mb-sm-0 me-sm-2 subscribe-input"
+                    placeholder="nombre@xyz.com">
+                <button type="submit" class="btn btn-primary subscribe-btn">SUSCRIBIRME</button>
+            </form>
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
+                <label class="form-check-label" for="privacyCheck">
+                    He leído y acepto la <a href="#" class="privacy-link">política de protección de datos
+                        personales</a>.
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">ACERCA DE TIENDA SKATEZONE</h5>
+                    <p class="footer-about-text">Somos una tienda especializada en bicicletas, skates y accesorios de
+                        movilidad urbana en la Región Lambayeque y todo el norte del país.</p>
+                    <div class="social-icons-footer mt-3">
+                        <a href="#" class="btn btn-light btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-sm me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-sm me-2"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">UBICANOS EN</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Carretera a Pimentel km 40, Chiclayo</li>
+                        <li><i class="fas fa-envelope"></i> ventas@skatezone.com</li>
+                        <li><i class="fas fa-phone"></i> + 48 234 567 88</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">HORARIO DE ATENCIÓN</h5>
+                    <ul class="list-unstyled footer-hours-list">
+                        <li>Lun - Vie: <span>8am - 9pm</span></li>
+                        <li>Sab - Dom: <span>8am - 6pm</span></li>
+                        <li>Feriados: <span>9am - 1pm</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright text-center mt-4 pt-3 border-top">
+                <p>&copy; 2024 Copyright: Adaptado por Ernesto Ñicho Córdova</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
